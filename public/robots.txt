@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://intellina2k26.in/sitemap.xml
