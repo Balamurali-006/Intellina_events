@@ -50,14 +50,14 @@ const Developers = () => {
             name: 'Satthikumar',
             title: 'Developer',
             handle: 'satthikumar',
-            avatarUrl: '/assets/images/developers/satthikumar.png',
+            avatarUrl: '/assets/images/developers/satthikumar.png?v=2',
             linkedinUrl: 'https://www.linkedin.com/in/satthikumar-m-998ba5325?utm_source=share_via&utm_content=profile&utm_medium=member_android',
         },
         {
             name: 'Shagul Hameeth',
             title: 'Developer',
             handle: 'shagulhameeth',
-            avatarUrl: '/assets/images/developers/shagul.png',
+            avatarUrl: '/assets/images/developers/shagul.png?v=2',
             linkedinUrl: 'https://www.linkedin.com/in/shagul-hameeth-j-2a52bb326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         },
         {
@@ -83,7 +83,7 @@ const Developers = () => {
                         <h1 className="developers-title">Developers</h1>
                         <p className="developers-subtitle">Meet the Architects of Innovation</p>
                         <p className="developers-tagline">
-                            <strong>From bugs to breakthroughs—that's the developer life.</strong>
+                            <strong>From bugs to breakthroughs that's the developer life.</strong>
                         </p>
                     </div>
 

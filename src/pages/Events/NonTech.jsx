@@ -15,52 +15,38 @@ const NonTech = () => {
       name: 'Big Boss',
       slug: 'bigboss',
       tagline: 'Strategy, Survival & Social Dynamics In The Ultimate Reality Challenge',
-      prize: '₹ 3,500 *',
+      prize: '₹ 1,500 *',
       image: '/assets/events/images/Biggboss.jpeg'
     },
     {
       name: 'IPL Auction',
       slug: 'ipl-auction',
       tagline: 'Bid Smart, Build Teams & Dominate The Cricket Empire',
-      prize: '₹ 3,000 *',
+      prize: '₹ 1,500 *',
       image: '/assets/events/images/IPLAuction.jpeg'
     },
     {
       name: 'Treasure Hunt',
       slug: 'treasure-hunt',
       tagline: 'Navigate The Unknown, Crack Codes & Discover Hidden Treasures',
-      prize: '₹ 4,000 *',
+      prize: '₹ 2,000 *',
       image: '/assets/events/images/TreasureHunt.jpeg'
     },
     {
       name: 'Connections',
       slug: 'connections',
       tagline: 'Link The Clues, Find Patterns & Master The Art Of Association',
-      prize: '₹ 3,500 *',
+      prize: '₹ 1,500 *',
       image: '/assets/events/images/Connections.jpeg'
     },
     {
       name: 'Murder Mystery',
       slug: 'murder-mystery',
       tagline: 'Unravel Secrets, Follow Clues & Solve The Enigma',
-      prize: '₹ 2,500 *',
-      image: '/assets/events/images/Murder Mystery.jpeg'
-    },
-    {
-      name: 'Snap-Sense',
-      slug: 'snap-sense',
-      tagline: 'Sense the moment, capture the magic, win the game',
-      prize: '₹ 2,500 *',
-      image: '/assets/events/images/SnapSense.jpeg'
+      prize: '₹ 1,500 *',
+      image: '/assets/events/images/MurderMysteryNew.jpeg'
     }
-    ,
-    {
-      name: 'Fandom Frenzy Quiz',
-      slug: 'fandom-frenzy',
-      tagline: 'Rapid-fire quiz across pop culture, movies, TV & comics',
-      prize: '₹ 2,000 *',
-      image: '/assets/events/images/FandomFrenzy.jpeg'
-    }
+
   ];
 
   const handleEventClick = (slug) => {

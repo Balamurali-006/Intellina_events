@@ -89,7 +89,7 @@ const Navbar = () => {
             </div>
 
             <nav className="fixed top-6 sm:top-8 md:top-10 left-1/2 transform -translate-x-1/2 z-50 w-[95%] sm:w-[90%] md:w-[85%] lg:w-[75%] xl:w-[70%] max-w-7xl">
-                <div id="innovative-navbar" className="innovative-navbar glass-premium glass-premium--red rounded-full px-6 py-3 sm:py-4 flex justify-between items-center group/nav overflow-hidden relative" style={{ borderRadius: '9999px' }}>
+                <div id="innovative-navbar" className="innovative-navbar glass-premium glass-premium--red rounded-full px-6 py-3 sm:py-4 md:px-8 md:py-5 flex justify-between items-center group/nav overflow-hidden relative" style={{ borderRadius: '9999px' }}>
                     {/* Holographic Grid Pattern */}
                     <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'linear-gradient(rgba(255,0,51,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,0,51,0.3) 1px, transparent 1px)', backgroundSize: '15px 15px', animation: 'nav-grid-move 15s linear infinite' }}></div>
 
@@ -121,8 +121,8 @@ const Navbar = () => {
                             <div className="absolute inset-0 bg-gradient-to-tr from-st-red/20 to-white/10 rounded-full scale-0 group-hover:scale-105 transition-transform duration-700 opacity-0 group-hover:opacity-80"></div>
 
                             {/* Logo Container with White Background - Circular - Cleaned */}
-                            <div className="relative z-10 bg-white rounded-full overflow-hidden flex items-center justify-center p-1 sm:p-1.5" style={{ width: '40px', height: '40px' }}>
-                                <img src={sympoLogo} alt="Coimbatore Institute of Technology" className="object-contain" style={{ width: 'auto', height: '32px' }} />
+                            <div className="relative z-10 bg-white rounded-full overflow-hidden flex items-center justify-center p-1 sm:p-1.5 w-10 h-10 md:w-12 md:h-12">
+                                <img src={sympoLogo} alt="Coimbatore Institute of Technology" className="object-contain h-8 md:h-9" style={{ width: 'auto' }} />
                             </div>
                         </div>
 
@@ -137,8 +137,8 @@ const Navbar = () => {
                             <div className="absolute inset-0 bg-gradient-to-tr from-st-red/20 to-white/10 rounded-full scale-0 group-hover:scale-105 transition-transform duration-700 opacity-0 group-hover:opacity-80"></div>
 
                             {/* Logo Container with White Background - Cleaned */}
-                            <div className="relative z-10 bg-white rounded-full overflow-hidden flex items-center justify-center p-1 sm:p-1.5" style={{ width: '40px', height: '40px' }}>
-                                <img src={deptLogo} alt="AI & DS Association" className="object-contain" style={{ width: 'auto', height: '32px' }} />
+                            <div className="relative z-10 bg-white rounded-full overflow-hidden flex items-center justify-center p-1 sm:p-1.5 w-10 h-10 md:w-12 md:h-12">
+                                <img src={deptLogo} alt="AI & DS Association" className="object-contain h-8 md:h-9" style={{ width: 'auto' }} />
                             </div>
                         </div>
 
@@ -148,7 +148,7 @@ const Navbar = () => {
                     <ul className="hidden xl:flex items-center space-x-2 relative z-10">
                         {navLinks.map((link) => (
                             <li key={link.to}>
-                                <Link to={link.to} className="nav-link relative text-[10px] font-black tracking-[0.1em] text-gray-400 hover:text-white transition-all duration-500 py-1.5 px-3 rounded-lg group/link overflow-hidden">
+                                <Link to={link.to} className="nav-link relative text-[10px] md:text-sm font-black tracking-[0.1em] text-gray-400 hover:text-white transition-all duration-500 py-1.5 md:py-2 px-3 md:px-4 rounded-lg group/link overflow-hidden">
                                     <span className="relative z-10">{link.label}</span>
                                     <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-gradient-to-r from-transparent via-st-red to-transparent group-hover/link:w-full transition-all duration-700 ease-in-out" style={{ boxShadow: '0 0 10px rgba(255,0,51,0.6)' }}></span>
                                 </Link>

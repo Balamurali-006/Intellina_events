@@ -149,16 +149,31 @@
     }
 }
 
-/* Cards Grid */
+/* Cards Grid - Flexbox for centering */
 .developers-grid-container {
-    display: grid;
-    /* keep items a readable max width and center the grid */
-    grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 40px;
     padding: 20px;
-    justify-content: center;
-    justify-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
     animation: fadeIn 1.2s ease-out 0.3s both;
+}
+
+/* Match grid sizing - adjusted for smaller cards */
+.developers-grid-container>* {
+    /* Prevent items from growing to fill the full row so the group stays centered */
+    flex: 0 1 200px;
+    max-width: 260px;
+    width: 100%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effect for developer cards */
+.developers-grid-container>*:hover {
+    transform: translateY(-8px) scale(1.02);
+    filter: drop-shadow(0 8px 24px rgba(125, 190, 255, 0.3)) drop-shadow(0 12px 40px rgba(255, 0, 51, 0.2));
 }
 
 @keyframes fadeIn {
@@ -173,16 +188,16 @@
 
 /* Responsive Adjustments */
 @media (min-width: 1200px) {
-    .developers-grid-container {
-        grid-template-columns: repeat(3, minmax(280px, 360px));
-        justify-content: center;
+    .developers-grid-container>* {
+        max-width: 360px;
+        /* 3 cols effectively */
     }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
-    .developers-grid-container {
-        grid-template-columns: repeat(2, minmax(260px, 360px));
-        justify-content: center;
+    .developers-grid-container>* {
+        max-width: 400px;
+        /* Allow slightly wider for 2 cols */
     }
 }
 
@@ -196,10 +211,12 @@
     }
 
     .developers-grid-container {
-        grid-template-columns: 1fr;
         gap: 30px;
         padding: 10px;
-        justify-items: center;
+    }
+
+    .developers-grid-container>* {
+        max-width: 360px;
     }
 
     .developers-tagline {

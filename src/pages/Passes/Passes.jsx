@@ -7,27 +7,43 @@ const REGISTRATION_URL = "https://docs.google.com/forms/d/e/1FAIpQLScUsI6og_xxSW
 
 const passesData = [
     {
-        name: "TECH INITIATE",
-        price: 250,
-        tagline: "Begin your journey into the unknown",
-        events: ["Paper Presentation", "Web Design", "Treasure Hunt", "Object Odyssey", "Connections", "Fandom Frenzy Quiz"],
+        name: "ELITE PASS",
+        price: 350,
+        tagline: "All-access pass for flagship events",
+        events: [
+            "RRR coding",
+            "Worst UI Design",
+            "Project Expo",
+            "Bigg Boss",
+            "Murder Mystery",
+            "IPL Auction",
+            "Fandom Frenzy Quiz",
+            "Rapid Chess",
+        ],
         dotColor: "#4ade80",
         accentColor: "#4ade80",
-        emoji: "⚡",
+        emoji: "🔥",
         delay: 0.1,
-        popular: false,
+        popular: true,
         hasWorkshop: true,
     },
     {
-        name: "CHALLENGER",
-        price: 300,
-        tagline: "Face the upside down",
-        events: ["RRR", "Worst UI", "Project Expo", "Bigg Boss", "Murder Mystery", "IPL Auction"],
-        dotColor: "#f87171",
-        accentColor: "#f87171",
-        emoji: "🔥",
+        name: "STANDARD PASS",
+        price: 250,
+        tagline: "Core events and workshops",
+        events: [
+            "Paper Presentation",
+            "Web Designing",
+            "Treasure Hunt",
+            "Object Odyssey",
+            "Connections",
+            "Snap-Sense",
+        ],
+        dotColor: "#4ade80",
+        accentColor: "#4ade80",
+        emoji: "⚡",
         delay: 0.2,
-        popular: true,
+        popular: false,
         hasWorkshop: true,
     },
 ];
@@ -164,60 +180,7 @@ export default function Passes() {
                             ))}
                         </div>
 
-                        {/* Hackathon Standalone */}
-                        <div className="w-full flex justify-center mb-20 px-4">
-                            <motion.div
-                                initial={{ opacity: 0, scale: 0.96 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                viewport={{ once: true }}
-                                className="hackathon-card w-full max-w-[500px] mx-auto"
-                                style={{ padding: '44px' }}
-                            >
-                                {/* Title & Desc Group */}
-                                <div className="flex flex-col items-center gap-2 mb-6">
-                                    <div className="pack-title !justify-center">
-                                        <Terminal size={28} className="text-red-600" style={{ filter: 'drop-shadow(0 0 8px rgba(255,26,26,0.6))' }} />
-                                        HACKATHON
-                                    </div>
-                                    <p className="pack-desc">"8-Hour Coding Battle – Build. Break. Conquer."</p>
-                                </div>
-
-                                {/* Workshop Badge for Hackathon */}
-                                <div className="workshop-badge" style={{
-                                    marginBottom: '20px',
-                                    padding: '8px 14px',
-                                    background: 'linear-gradient(135deg, #f8717120, #f8717140)',
-                                    border: '1.5px solid #f87171',
-                                    borderRadius: '6px',
-                                    textAlign: 'center',
-                                    fontSize: '0.85rem',
-                                    fontWeight: '600',
-                                    color: '#f87171',
-                                    textTransform: 'uppercase',
-                                    letterSpacing: '0.5px',
-                                    boxShadow: '0 0 12px #f8717130',
-                                }}>
-                                    ✨ +Workshop Included
-                                </div>
-
-                                {/* Price Section Wrapper */}
-                                <div className="price-section flex flex-col items-center gap-6 w-full">
-                                    <div className="flex flex-col items-center">
-                                        <span className="pack-price-label" style={{ display: 'block' }}>STANDALONE ENTRY</span>
-                                        <p className="pack-price !text-5xl md:!text-6xl">₹250</p>
-                                    </div>
-
-                                    <button
-                                        className="btn-register flex justify-center items-center"
-                                        style={{ minWidth: '280px', width: 'auto', padding: '0 40px' }}
-                                        aria-label="Register for Hackathon"
-                                        onClick={() => window.open(REGISTRATION_URL, '_blank')}
-                                    >
-                                        REGISTER NOW <ArrowRight size={16} />
-                                    </button>
-                                </div>
-                            </motion.div>
-                        </div>
+                        {/* Hackathon removed per design — standalone entry omitted */}
 
 
                         {/* Final CTA */}
@@ -231,6 +194,21 @@ export default function Passes() {
                             <p className="warning-text mt-6">
                                 ⚠ One pass allows access only to events listed under it.
                             </p>
+
+                            <div style={{
+                                marginTop: 18,
+                                padding: '12px 18px',
+                                display: 'inline-block',
+                                borderRadius: 10,
+                                border: '1.5px solid #4ade80',
+                                background: 'linear-gradient(135deg, rgba(74,222,128,0.06), rgba(74,222,128,0.03))',
+                                color: '#065f46',
+                                fontWeight: 700,
+                                textTransform: 'uppercase',
+                                letterSpacing: '0.6px'
+                            }}>
+                                EVENTS CAN BE REGISTERED INDIVIDUALLY : Rs.80/ Person for an Event
+                            </div>
                         </motion.div>
                     </div >
                 </div >

@@ -28,7 +28,7 @@ const Technical = () => {
       name: 'RRR',
       slug: 'rrr',
       tagline: 'React, Respond & Resolve: The Ultimate Tech Quiz',
-      prize: '₹ 5,000 *',
+      prize: '₹ 3,000 *',
       image: '/assets/events/images/RRR.jpeg'
     },
     {

@@ -38,7 +38,7 @@ const events = {
       day: "Mar 6",
       time: "10.30 am to 3.00 pm",
       teamSize: "Solo",
-      prizes: "5,000",
+      prizes: "3,000",
       image: "/assets/events/images/RRR.jpeg",
       poster: "/assets/events/posters/RRR.png"
     },
@@ -127,9 +127,37 @@ const events = {
       day: "Mar 6",
       time: "TBA",
       teamSize: "Solo / Team",
-      prizes: "7,000",
+      prizes: "1,000",
       image: "/assets/events/images/E-sports.jpeg",
       poster: "/assets/events/posters/E-Sports.png"
+    },
+
+    gptathon: {
+      id: 21,
+      title: "GPT-ATHON",
+      category: "flagship",
+      description:
+        "GPTathon is an innovation challenge where participants leverage AI and Large Language Models to solve real-world problems. Participants will build prototypes using Generative AI tools.",
+      day: "Mar 6",
+      time: "10.00 am to 4.00 pm",
+      teamSize: "Team of 2-3",
+      prizes: "3,000",
+      image: "/assets/events/images/GPTathon.jpeg",
+      poster: "/assets/events/posters/GPTathon.png"
+    },
+
+    "fandom-frenzy-quiz": {
+      id: 20,
+      title: "FANDOM FRENZY QUIZ",
+      category: "flagship",
+      description:
+        "Fandom Frenzy Quiz is a fast-paced trivia event testing participants' knowledge across movies, TV shows, comics, and pop culture. Teams compete in rounds of rapid-fire questions and buzzer challenges.",
+      day: "Mar 7",
+      time: "3.00 pm to 4.30 pm",
+      teamSize: "Team of 2",
+      prizes: "1,500",
+      image: "/assets/events/images/FandomFrenzyNew.jpg",
+      poster: "/assets/events/posters/FandomFrenzy.png"
     }
   },
 
@@ -144,7 +172,7 @@ const events = {
       day: "Mar 6",
       time: "2.00 pm to 5.00 pm",
       teamSize: "Solo",
-      prizes: "3,500",
+      prizes: "1,500",
       image: "/assets/events/images/Biggboss.jpeg",
       poster: "/assets/events/posters/BiggBoss.png"
     },
@@ -158,7 +186,7 @@ const events = {
       day: "Mar 7",
       time: "9.00 am",
       teamSize: "Team of 3-4",
-      prizes: "3,000",
+      prizes: "1,500",
       image: "/assets/events/images/IPLAuction.jpeg",
       poster: "/assets/events/posters/IPLAuction.png"
     },
@@ -172,7 +200,7 @@ const events = {
       day: "Mar 6",
       time: "11.00 am to 3.00 pm",
       teamSize: "Team of 4",
-      prizes: "4,000",
+      prizes: "2,000",
       image: "/assets/events/images/TreasureHunt.jpeg",
       poster: "/assets/events/posters/TreasureHunt.png"
     },
@@ -186,7 +214,7 @@ const events = {
       day: "Mar 7",
       time: "9.00 am to 12.00 pm",
       teamSize: "Solo",
-      prizes: "2,500",
+      prizes: "1,500",
       image: "/assets/events/images/Connections.jpeg",
       poster: "/assets/events/posters/Connections.png"
     },
@@ -200,8 +228,8 @@ const events = {
       day: "Mar 6",
       time: "3.00 pm to 5.00 pm",
       teamSize: "Team",
-      prizes: "2,500",
-      image: "/assets/events/images/Murder-Mystery.jpeg",
+      prizes: "1,500",
+      image: '/assets/events/images/MurderMysteryNew.jpeg',
       poster: "/assets/events/posters/MurderMystery.png"
     },
 
@@ -214,23 +242,11 @@ const events = {
       day: "Mar 7",
       time: "11.00 am to 2.00 pm",
       teamSize: "Solo",
-      prizes: "2,500",
+      prizes: "1,500",
       image: "/assets/events/images/SnapSense.jpeg",
       poster: "/assets/events/posters/SNAPSENSE.png"
     },
-    "fandom-frenzy": {
-      id: 20,
-      title: "FANDOM FRENZY QUIZ",
-      category: "non-tech",
-      description:
-        "Fandom Frenzy Quiz is a fast-paced trivia event testing participants' knowledge across movies, TV shows, comics, and pop culture. Teams compete in rounds of rapid-fire questions and buzzer challenges.",
-      day: "Mar 7",
-      time: "3.00 pm to 4.30 pm",
-      teamSize: "Team of 2",
-      prizes: "2,000",
-      image: "/assets/events/images/FandomFrenzy.jpeg",
-      poster: "/assets/events/posters/FandomFrenzy.png"
-    }
+
   }
 };
 

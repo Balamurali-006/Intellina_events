@@ -38,6 +38,7 @@
 }
 
 @media (max-width: 768px) {
+
   /* Allow vertical pan/scroll on mobile so the animated card doesn't block page scrolling */
   .pc-card-wrapper {
     touch-action: pan-y;
@@ -69,8 +70,8 @@
 }
 
 .pc-card {
-  height: 80svh;
-  max-height: 540px;
+  height: 55svh;
+  max-height: 380px;
   display: grid;
   aspect-ratio: 0.718;
   border-radius: var(--card-radius);
@@ -411,20 +412,23 @@
 .pc-details h3 {
   font-weight: 600;
   margin: 0;
-  font-size: min(5svh, 3em);
-  margin: 0;
+  font-size: min(3.2svh, 1.8em);
   background-image: linear-gradient(to bottom, #fff, #6f6fbe);
   background-size: 1em 1.5em;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90%;
 }
 
 .pc-name-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 4px;
   position: relative;
   z-index: 100;
 }
@@ -444,11 +448,12 @@
 }
 
 .pc-linkedin-icon {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   color: #0077b5;
   filter: drop-shadow(0 0 6px rgba(0, 119, 181, 0.6));
   transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
 .pc-linkedin-link:hover .pc-linkedin-icon {

@@ -11,7 +11,6 @@ const Flagship = () => {
   const navigate = useNavigate();
 
   const flagshipEvents = [
-    // GPTathon removed
     {
       name: 'Rapid Chess',
       tagline: 'Test Your Strategic Thinking & Speed In The Ultimate Chess Battle',
@@ -29,9 +28,23 @@ const Flagship = () => {
     {
       name: 'E-Sports',
       tagline: 'Battle In Virtual Arenas, Prove Your Gaming Supremacy',
-      prize: '₹ 7,000 *',
+      prize: '₹ 1,000 *',
       image: '/assets/events/images/E-sports.jpeg',
       slug: 'esports'
+    },
+    {
+      name: 'GPTathon',
+      tagline: 'Innovate with AI, transform ideas into reality.',
+      prize: '₹ 3,000 *',
+      image: '/assets/events/images/GPTathon.jpeg',
+      slug: 'gptathon'
+    },
+    {
+      name: 'Fandom Frenzy Quiz',
+      tagline: 'Test your knowledge in the ultimate fandom battle.',
+      prize: '₹ 1,500 *',
+      image: '/assets/events/images/FandomFrenzyNew.jpg',
+      slug: 'fandom-frenzy-quiz'
     }
   ];
 
