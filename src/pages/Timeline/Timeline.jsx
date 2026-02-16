@@ -42,11 +42,25 @@ const timelineData = {
             mainIcon: 'timer'
         },
         {
+            time: '11:00 AM - 12:00 PM',
+            title: 'Workshop',
+            description: 'An immersive hands-on session diving deeper into the unknown.',
+            icon: 'school',
+            mainIcon: 'menu_book'
+        },
+        {
             time: '11:00 AM - 03:00 PM',
             title: 'Treasure Hunt',
             description: 'Follow the shadows. Find the artifacts before they find you.',
             icon: 'explore',
             mainIcon: 'map'
+        },
+        {
+            time: '02:00 PM - 03:00 PM',
+            title: 'Workshop',
+            description: 'Advanced practical session designed to unlock hidden skills.',
+            icon: 'science',
+            mainIcon: 'biotech'
         },
         {
             time: '02:00 PM - 05:00 PM',
@@ -92,6 +106,13 @@ const timelineData = {
             description: 'Showcasing the fruits of your labor. Proof that we are not alone in our curiosity.',
             icon: 'rocket_launch',
             mainIcon: 'campaign'
+        },
+        {
+            time: '09:00 AM - 12:00 PM',
+            title: 'Workshop',
+            description: 'Collaborative deep-dive session bridging ideas and execution.',
+            icon: 'groups',
+            mainIcon: 'handshake'
         },
         {
             time: '09:00 AM - 12:00 PM',

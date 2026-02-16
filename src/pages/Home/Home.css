@@ -22,6 +22,19 @@
     mix-blend-mode: normal;
 }
 
+/* Strong overlay to fully cover any injected Spline badge on mobile */
+.spline-watermark-cover {
+    position: absolute !important;
+    bottom: 8px !important;
+    right: 8px !important;
+    width: 160px !important;
+    height: 64px !important;
+    background: #000 !important;
+    border-radius: 8px !important;
+    z-index: 99999 !important;
+    pointer-events: none !important;
+}
+
 .page-home .hero-presents {
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -78,4 +91,13 @@
 
 .page-home .animate-slide-up-word {
     animation: slide-up-word-home 0.6s ease-out;
+}
+
+/* Fallback: hide Spline watermark elements if still visible (non-destructive) */
+iframe[src*="spline.design"] + div:not(.spline-watermark-cover),
+.spline-watermark,
+[class*="watermark"]:not(.spline-watermark-cover) {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
 }

@@ -16,6 +16,7 @@ const passesData = [
         emoji: "⚡",
         delay: 0.1,
         popular: false,
+        hasWorkshop: true,
     },
     {
         name: "CHALLENGER",
@@ -27,10 +28,11 @@ const passesData = [
         emoji: "🔥",
         delay: 0.2,
         popular: true,
+        hasWorkshop: true,
     },
 ];
 
-const PassCard = ({ name, price, tagline, events, dotColor, accentColor, emoji, delay, popular }) => (
+const PassCard = ({ name, price, tagline, events, dotColor, accentColor, emoji, delay, popular, hasWorkshop }) => (
     <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -74,6 +76,26 @@ const PassCard = ({ name, price, tagline, events, dotColor, accentColor, emoji, 
                 </li>
             ))}
         </ul>
+
+        {/* Workshop Badge */}
+        {hasWorkshop && (
+            <div className="workshop-badge" style={{
+                marginTop: '12px',
+                padding: '8px 14px',
+                background: `linear-gradient(135deg, ${accentColor}20, ${accentColor}40)`,
+                border: `1.5px solid ${accentColor}`,
+                borderRadius: '6px',
+                textAlign: 'center',
+                fontSize: '0.85rem',
+                fontWeight: '600',
+                color: accentColor,
+                textTransform: 'uppercase',
+                letterSpacing: '0.5px',
+                boxShadow: `0 0 12px ${accentColor}30`,
+            }}>
+                ✨ +Workshop Included
+            </div>
+        )}
 
         {/* Button */}
         <button
@@ -158,6 +180,24 @@ export default function Passes() {
                                         HACKATHON
                                     </div>
                                     <p className="pack-desc">"8-Hour Coding Battle – Build. Break. Conquer."</p>
+                                </div>
+
+                                {/* Workshop Badge for Hackathon */}
+                                <div className="workshop-badge" style={{
+                                    marginBottom: '20px',
+                                    padding: '8px 14px',
+                                    background: 'linear-gradient(135deg, #f8717120, #f8717140)',
+                                    border: '1.5px solid #f87171',
+                                    borderRadius: '6px',
+                                    textAlign: 'center',
+                                    fontSize: '0.85rem',
+                                    fontWeight: '600',
+                                    color: '#f87171',
+                                    textTransform: 'uppercase',
+                                    letterSpacing: '0.5px',
+                                    boxShadow: '0 0 12px #f8717130',
+                                }}>
+                                    ✨ +Workshop Included
                                 </div>
 
                                 {/* Price Section Wrapper */}
