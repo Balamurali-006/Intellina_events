@@ -20,7 +20,7 @@ const Technical = () => {
     {
       name: 'Hackathon',
       slug: 'hackathon',
-      tagline: 'Code Through The Night, Build The Future In 24 Hours',
+      tagline: 'Build Smart. Deploy Agents. Automate the Future.',
       prize: '₹ 25,000 *',
       image: '/assets/events/images/Hackathon.jpeg'
     },

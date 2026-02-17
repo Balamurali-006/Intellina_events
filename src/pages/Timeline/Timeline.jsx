@@ -30,7 +30,7 @@ const timelineData = {
         {
             time: '10:30 AM - 01:30 PM',
             title: 'Fandom Frenzy Quiz',
-            description: 'A rapid, buzzer-style quiz covering movies, TV, comics and pop culture. Test your fandom knowledge under pressure.',
+            description: 'A rapid, buzzer-style quiz covering anime and web series. Test your knowledge under pressure.',
             icon: 'smart_toy',
             mainIcon: 'psychology'
         },

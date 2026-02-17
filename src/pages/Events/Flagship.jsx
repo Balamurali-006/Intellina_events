@@ -14,7 +14,7 @@ const Flagship = () => {
     {
       name: 'Rapid Chess',
       tagline: 'Test Your Strategic Thinking & Speed In The Ultimate Chess Battle',
-      prize: 'As per announcement *',
+      prize: '₹ 1,500 *',
       image: '/assets/events/images/RapidChess.jpeg',
       slug: 'rapid-chess'
     },
@@ -35,14 +35,14 @@ const Flagship = () => {
     {
       name: 'GPTathon',
       tagline: 'Innovate with AI, transform ideas into reality.',
-      prize: '₹ 3,000 *',
+      prize: '₹ 8,000 *',
       image: '/assets/events/images/GPTathon.jpeg',
       slug: 'gptathon'
     },
     {
       name: 'Fandom Frenzy Quiz',
       tagline: 'Test your knowledge in the ultimate fandom battle.',
-      prize: '₹ 1,500 *',
+      prize: '₹ 1,000*',
       image: '/assets/events/images/FandomFrenzyNew.jpg',
       slug: 'fandom-frenzy-quiz'
     }

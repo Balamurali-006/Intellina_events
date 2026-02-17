@@ -10,6 +10,19 @@ const EventDescription = () => {
   // Fetch event details dynamically
   const eventDetails = eventsData[category]?.[eventId];
 
+  // Robust Gptathon detection: normalize slug or title to plain letters
+  const normalize = (s) =>
+    String(s || '')
+      .toLowerCase()
+      .replace(/[^a-z0-9]/g, '');
+
+  const isGptathon =
+    normalize(eventId) === 'gptathon' || normalize(eventDetails?.title) === 'gptathon';
+
+  const registerUrl = isGptathon
+    ? 'https://unstop.com/o/1QyUbxr?lb=TncsUv60&utm_medium=Share&utm_source=harism8992&utm_campaign=Online_coding_challenge'
+    : 'https://docs.google.com/forms/d/e/1FAIpQLScUsI6og_xxSWquoO9k74xv3ZbN1xHb5D94Kw8jrLcpdih0Rw/viewform';
+
   const handleClose = () => {
     navigate(-1);
   };
@@ -107,7 +120,7 @@ const EventDescription = () => {
 
             {/* Actions */}
             <div className="event-actions">
-              <button className="register-btn" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScUsI6og_xxSWquoO9k74xv3ZbN1xHb5D94Kw8jrLcpdih0Rw/viewform', '_blank')}>
+              <button className="register-btn" onClick={() => window.open(registerUrl, '_blank')}>
                 SECURE YOUR SPOT NOW
               </button>
             </div>

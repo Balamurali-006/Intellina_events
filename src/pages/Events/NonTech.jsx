@@ -45,6 +45,13 @@ const NonTech = () => {
       tagline: 'Unravel Secrets, Follow Clues & Solve The Enigma',
       prize: '₹ 1,500 *',
       image: '/assets/events/images/MurderMysteryNew.jpeg'
+    },
+    {
+      name: 'Snap Sense',
+      slug: 'snap-sense',
+      tagline: 'Capture The Moment, Explain The Story & Win With Creativity',
+      prize: '₹ 1,500 *',
+      image: '/assets/events/images/SnapSense.jpeg'
     }
 
   ];
