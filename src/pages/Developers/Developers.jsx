@@ -10,6 +10,23 @@ const Developers = () => {
         window.addEventListener('resize', onResize);
         return () => window.removeEventListener('resize', onResize);
     }, []);
+    const leadDevelopers = [
+        {
+            name: 'Deepitha',
+            title: 'Lead Developer',
+            handle: 'deepitha',
+            avatarUrl: '/assets/images/developers/Deepitha.png',
+            linkedinUrl: 'https://www.linkedin.com/in/deepitha-m-76961928b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+        },
+        {
+            name: 'Sanjay Kumar',
+            title: 'Lead Developer',
+            handle: 'sanjaykumar',
+            avatarUrl: '/assets/images/developers/Sanjaykumar.png',
+            linkedinUrl: 'https://www.linkedin.com/in/sanjaykumar18092005/',
+        },
+    ];
+
     const teamMembers = [
         {
             name: 'Abinaya',
@@ -87,7 +104,35 @@ const Developers = () => {
                         </p>
                     </div>
 
-                    {/* Team Grid */}
+                    {/* Lead Developers Section */}
+                    <div className="section-divider">
+                        <h2 className="section-title">Lead Developers</h2>
+                    </div>
+                    <div className="lead-developers-grid-container">
+                        {leadDevelopers.map((member, index) => (
+                            <ProfileCard
+                                key={index}
+                                name={member.name}
+                                title={member.title}
+                                handle={member.handle}
+                                avatarUrl={member.avatarUrl}
+                                enableTilt={!isMobile}
+                                enableMobileTilt={false}
+                                showBehindGlow={true}
+                                behindGlowColor="rgba(125, 190, 255, 0.67)"
+                                innerGradient="linear-gradient(145deg,#60496e8c 0%,#71C4FF44 100%)"
+                                showUserInfo={false}
+                                showIcon={true}
+                                linkedinUrl={member.linkedinUrl}
+                                onContactClick={() => console.log(`Contact ${member.name}`)}
+                            />
+                        ))}
+                    </div>
+
+                    {/* Developers Section */}
+                    <div className="section-divider">
+                        <h2 className="section-title">Developers</h2>
+                    </div>
                     <div className="developers-grid-container">
                         {teamMembers.map((member, index) => (
                             <ProfileCard
