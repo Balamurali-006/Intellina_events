@@ -180,7 +180,215 @@ export default function Passes() {
                             ))}
                         </div>
 
-                        {/* Hackathon removed per design — standalone entry omitted */}
+                        {/* Special Event Registration Cards */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6 }}
+                            className="text-center mb-12"
+                        >
+                            <h2 className="section-heading" style={{ fontSize: '36px', marginBottom: '40px' }}>
+                                SPECIAL EVENT REGISTRATIONS
+                            </h2>
+
+                            <div
+                                className="special-events-grid"
+                                style={{
+                                    display: 'grid',
+                                    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                                    gap: '40px',
+                                    maxWidth: '900px',
+                                    margin: '0 auto',
+                                }}>
+                                {/* GPTathon Card */}
+                                <motion.div
+                                    initial={{ opacity: 0, x: -30 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.6, delay: 0.1 }}
+                                    className="special-event-card"
+                                    style={{
+                                        background: 'radial-gradient(ellipse at 50% 50%, #0a1f0a 0%, #050a05 70%)',
+                                        border: '1px solid #22c55e',
+                                        borderRadius: '20px',
+                                        padding: '40px 32px',
+                                        boxShadow: '0 0 20px rgba(34, 197, 94, 0.3), inset 0 0 20px rgba(34, 197, 94, 0.05)',
+                                        position: 'relative',
+                                        overflow: 'hidden',
+                                        transition: 'all 0.4s ease',
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(-8px) scale(1.02)';
+                                        e.currentTarget.style.boxShadow = '0 0 40px rgba(34, 197, 94, 0.5), 0 0 80px rgba(34, 197, 94, 0.2)';
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                                        e.currentTarget.style.boxShadow = '0 0 20px rgba(34, 197, 94, 0.3), inset 0 0 20px rgba(34, 197, 94, 0.05)';
+                                    }}
+                                >
+                                    {/* Top accent line */}
+                                    <div style={{
+                                        position: 'absolute',
+                                        top: 0,
+                                        left: 0,
+                                        right: 0,
+                                        height: '3px',
+                                        background: 'linear-gradient(90deg, transparent, #22c55e, transparent)',
+                                        opacity: 0.8,
+                                    }} />
+
+                                    <div style={{ fontSize: '3rem', marginBottom: '16px' }}>🤖</div>
+                                    <h3 style={{
+                                        fontFamily: "'Cinzel', serif",
+                                        fontSize: '1.8rem',
+                                        fontWeight: 900,
+                                        color: '#22c55e',
+                                        textTransform: 'uppercase',
+                                        letterSpacing: '3px',
+                                        marginBottom: '12px',
+                                        textShadow: '0 0 15px rgba(34, 197, 94, 0.5)',
+                                    }}>
+                                        GPT-ATHON
+                                    </h3>
+                                    <p style={{
+                                        color: 'rgba(200, 255, 200, 0.7)',
+                                        fontSize: '0.95rem',
+                                        marginBottom: '24px',
+                                        lineHeight: '1.6',
+                                    }}>
+                                        AI Innovation Challenge - Build the Future with Generative AI
+                                    </p>
+                                    <button
+                                        onClick={() => window.open('https://unstop.com/o/1QyUbxr?lb=TncsUv60&utm_medium=Share&utm_source=harism8992&utm_campaign=Online_coding_challenge', '_blank')}
+                                        style={{
+                                            background: 'linear-gradient(135deg, #166534, #22c55e)',
+                                            border: '1px solid rgba(34, 197, 94, 0.5)',
+                                            borderRadius: '50px',
+                                            color: '#ffffff',
+                                            cursor: 'pointer',
+                                            fontFamily: "'Orbitron', monospace",
+                                            fontSize: '0.75rem',
+                                            fontWeight: 700,
+                                            letterSpacing: '2px',
+                                            padding: '16px 32px',
+                                            textTransform: 'uppercase',
+                                            transition: 'all 0.3s ease',
+                                            width: '100%',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            gap: '8px',
+                                            boxShadow: '0 0 15px rgba(34, 197, 94, 0.3)',
+                                        }}
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.background = 'linear-gradient(135deg, #22c55e, #4ade80)';
+                                            e.currentTarget.style.boxShadow = '0 0 30px rgba(34, 197, 94, 0.6)';
+                                            e.currentTarget.style.transform = 'scale(1.05)';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.background = 'linear-gradient(135deg, #166534, #22c55e)';
+                                            e.currentTarget.style.boxShadow = '0 0 15px rgba(34, 197, 94, 0.3)';
+                                            e.currentTarget.style.transform = 'scale(1)';
+                                        }}
+                                    >
+                                        REGISTER ON UNSTOP <ArrowRight size={16} />
+                                    </button>
+                                </motion.div>
+
+                                {/* Hackathon Card */}
+                                <motion.div
+                                    initial={{ opacity: 0, x: 30 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.6, delay: 0.2 }}
+                                    className="special-event-card"
+                                    style={{
+                                        background: 'radial-gradient(ellipse at 50% 50%, #0a1f0a 0%, #050a05 70%)',
+                                        border: '1px solid #22c55e',
+                                        borderRadius: '20px',
+                                        padding: '40px 32px',
+                                        boxShadow: '0 0 20px rgba(34, 197, 94, 0.3), inset 0 0 20px rgba(34, 197, 94, 0.05)',
+                                        position: 'relative',
+                                        overflow: 'hidden',
+                                        transition: 'all 0.4s ease',
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(-8px) scale(1.02)';
+                                        e.currentTarget.style.boxShadow = '0 0 40px rgba(34, 197, 94, 0.5), 0 0 80px rgba(34, 197, 94, 0.2)';
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                                        e.currentTarget.style.boxShadow = '0 0 20px rgba(34, 197, 94, 0.3), inset 0 0 20px rgba(34, 197, 94, 0.05)';
+                                    }}
+                                >
+                                    {/* Top accent line */}
+                                    <div style={{
+                                        position: 'absolute',
+                                        top: 0,
+                                        left: 0,
+                                        right: 0,
+                                        height: '3px',
+                                        background: 'linear-gradient(90deg, transparent, #22c55e, transparent)',
+                                        opacity: 0.8,
+                                    }} />
+
+                                    <div style={{ fontSize: '3rem', marginBottom: '16px' }}>💻</div>
+                                    <h3 style={{
+                                        fontFamily: "'Cinzel', serif",
+                                        fontSize: '1.8rem',
+                                        fontWeight: 900,
+                                        color: '#22c55e',
+                                        textTransform: 'uppercase',
+                                        letterSpacing: '3px',
+                                        marginBottom: '12px',
+                                        textShadow: '0 0 15px rgba(34, 197, 94, 0.5)',
+                                    }}>
+                                        HACKATHON
+                                    </h3>
+                                    <p style={{
+                                        color: 'rgba(200, 255, 200, 0.7)',
+                                        fontSize: '0.95rem',
+                                        marginBottom: '24px',
+                                        lineHeight: '1.6',
+                                    }}>
+                                        Web Agent Hackathon - Build Intelligent Agents That Shape Tomorrow
+                                    </p>
+                                    <button
+                                        onClick={() => window.open('https://unstop.com/o/pbuTYrw?lb=MZOG3iNE&utm_medium=Share&utm_source=dharsb2554&utm_campaign=Online_coding_challenge', '_blank')}
+                                        style={{
+                                            background: 'linear-gradient(135deg, #166534, #22c55e)',
+                                            border: '1px solid rgba(34, 197, 94, 0.5)',
+                                            borderRadius: '50px',
+                                            color: '#ffffff',
+                                            cursor: 'pointer',
+                                            fontFamily: "'Orbitron', monospace",
+                                            fontSize: '0.75rem',
+                                            fontWeight: 700,
+                                            letterSpacing: '2px',
+                                            padding: '16px 32px',
+                                            textTransform: 'uppercase',
+                                            transition: 'all 0.3s ease',
+                                            width: '100%',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            gap: '8px',
+                                            boxShadow: '0 0 15px rgba(34, 197, 94, 0.3)',
+                                        }}
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.background = 'linear-gradient(135deg, #22c55e, #4ade80)';
+                                            e.currentTarget.style.boxShadow = '0 0 30px rgba(34, 197, 94, 0.6)';
+                                            e.currentTarget.style.transform = 'scale(1.05)';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.background = 'linear-gradient(135deg, #166534, #22c55e)';
+                                            e.currentTarget.style.boxShadow = '0 0 15px rgba(34, 197, 94, 0.3)';
+                                            e.currentTarget.style.transform = 'scale(1)';
+                                        }}
+                                    >
+                                        REGISTER ON UNSTOP <ArrowRight size={16} />
+                                    </button>
+                                </motion.div>
+                            </div>
+                        </motion.div>
 
 
                         {/* Final CTA */}
@@ -209,6 +417,43 @@ export default function Passes() {
                             }}>
                                 EVENTS CAN BE REGISTERED INDIVIDUALLY : Rs.80/ Person for an Event
                             </div>
+
+                            {/* Individual Event Registration Button */}
+                            <button
+                                onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScUsI6og_xxSWquoO9k74xv3ZbN1xHb5D94Kw8jrLcpdih0Rw/viewform', '_blank')}
+                                style={{
+                                    marginTop: '24px',
+                                    background: 'linear-gradient(135deg, #166534, #22c55e)',
+                                    border: '1px solid rgba(34, 197, 94, 0.5)',
+                                    borderRadius: '50px',
+                                    color: '#ffffff',
+                                    cursor: 'pointer',
+                                    fontFamily: "'Orbitron', monospace",
+                                    fontSize: '0.75rem',
+                                    fontWeight: 700,
+                                    letterSpacing: '2px',
+                                    padding: '16px 32px',
+                                    textTransform: 'uppercase',
+                                    transition: 'all 0.3s ease',
+                                    display: 'inline-flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    gap: '8px',
+                                    boxShadow: '0 0 15px rgba(34, 197, 94, 0.3)',
+                                }}
+                                onMouseEnter={(e) => {
+                                    e.currentTarget.style.background = 'linear-gradient(135deg, #22c55e, #4ade80)';
+                                    e.currentTarget.style.boxShadow = '0 0 30px rgba(34, 197, 94, 0.6)';
+                                    e.currentTarget.style.transform = 'scale(1.05)';
+                                }}
+                                onMouseLeave={(e) => {
+                                    e.currentTarget.style.background = 'linear-gradient(135deg, #166534, #22c55e)';
+                                    e.currentTarget.style.boxShadow = '0 0 15px rgba(34, 197, 94, 0.3)';
+                                    e.currentTarget.style.transform = 'scale(1)';
+                                }}
+                            >
+                                <ArrowRight size={16} /> Register for individual events
+                            </button>
                         </motion.div>
                     </div >
                 </div >
