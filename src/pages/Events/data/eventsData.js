@@ -112,7 +112,7 @@ const events = {
         "Object Odyssey is a thrilling scavenger hunt that tests observation skills, quick thinking, and the ability to spot hidden objects in complex environments. Participants race to find specific items before time runs out.",
       day: "Mar 6",
       time: "3.00 pm to 5.00 pm",
-      teamSize: "Individual",
+      teamSize: "Team of 2",
       prizes: "1,500",
       image: "/assets/events/images/ObjectOdyssey.jpeg",
       poster: "/assets/events/posters/OBJECTODYSSEY.png"
@@ -120,13 +120,13 @@ const events = {
 
     esports: {
       id: 9,
-      title: "E-SPORTS",
+      title: "E-SPORTS(FREE FIRE)",
       category: "flagship",
       description:
-        "eSports: Free Fire is an intense competitive gaming event where participants battle showcasing strategy, reflexes, and teamwork.",
-      day: "Mar 6",
+        "Free Fire is an adrenaline-pumping esports event that challenges players to outplay, outthink, and outlast their opponents. With fast-paced action, sharp reflexes, and tactical teamwork, participants must fight their way to be the last squad standing",
+      day: "Feb 28 and Mar 1",
       time: "TBA",
-      teamSize: "Solo / Team",
+      teamSize: "Team of 4",
       prizes: "1,000",
       image: "/assets/events/images/E-sports.jpeg",
       poster: "/assets/events/posters/E-Sports.png"

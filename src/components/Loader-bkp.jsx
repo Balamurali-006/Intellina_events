@@ -599,7 +599,7 @@ export function renderLoader() {
       <div class="intro">
         <h1 class="intro-title">INTELLINA 2K26</h1>
         <p class="intro-text intro-text--can intro-text--show" style="max-width: 600px; margin: 0 auto; letter-spacing: 0.5px;">
-          <span style="display: block; margin-bottom: 1em; text-transform: uppercase; font-size: 0.8em; letter-spacing: 2px; color: #666;">-- U.S. DEPARTMENT OF ENERGY --</span>
+          <span style="display: block; margin-bottom: 1em; text-transform: uppercase; font-size: 0.8em; letter-spacing: 2px; color: #666;">-- AI & DS --</span>
           The Department of AI & Data Science is cracking the dimensional barrier at C.I.T. 
           <br><br>
           <span style="color: #fff; text-shadow: 0 0 5px rgba(255,255,255,0.5);">WARNING:</span> The frequencies are unstable. 

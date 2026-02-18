@@ -19,9 +19,14 @@ const EventDescription = () => {
   const isGptathon =
     normalize(eventId) === 'gptathon' || normalize(eventDetails?.title) === 'gptathon';
 
+  const isHackathon =
+    normalize(eventId) === 'hackathon' || normalize(eventDetails?.title) === 'hackathon';
+
   const registerUrl = isGptathon
     ? 'https://unstop.com/o/1QyUbxr?lb=TncsUv60&utm_medium=Share&utm_source=harism8992&utm_campaign=Online_coding_challenge'
-    : 'https://docs.google.com/forms/d/e/1FAIpQLScUsI6og_xxSWquoO9k74xv3ZbN1xHb5D94Kw8jrLcpdih0Rw/viewform';
+    : isHackathon
+      ? 'https://unstop.com/o/pbuTYrw?lb=MZOG3iNE&utm_medium=Share&utm_source=dharsb2554&utm_campaign=Online_coding_challenge'
+      : 'https://docs.google.com/forms/d/e/1FAIpQLScUsI6og_xxSWquoO9k74xv3ZbN1xHb5D94Kw8jrLcpdih0Rw/viewform';
 
   const handleClose = () => {
     navigate(-1);

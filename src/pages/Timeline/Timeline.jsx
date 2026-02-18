@@ -91,9 +91,9 @@ const timelineData = {
             mainIcon: 'inventory_2'
         },
         {
-            time: '05:00 PM - 08:00 PM',
-            title: 'E-Sports',
-            description: 'The final battle for supremacy in the digital arena. Victory is your only escape.',
+            time: 'Feb 28 & Mar 1',
+            title: 'E-sports',
+            description: 'Free Fire is an adrenaline-pumping esports event that challenges players to outplay, outthink, and outlast their opponents.',
             icon: 'sports_esports',
             mainIcon: 'stadia_controller',
             isSpecial: true
@@ -129,21 +129,21 @@ const timelineData = {
             mainIcon: 'bid_landscape'
         },
         {
-            time: '02:00 PM - 04:00 PM',
+            time: '11:00 AM - 02:00 PM',
             title: 'Worst Design',
             description: 'Embrace the chaos. Create something so intentionally flawed it becomes a masterpiece.',
             icon: 'design_services',
             mainIcon: 'brush'
         },
         {
-            time: '02:00 PM - 04:00 PM',
+            time: '11:00 AM - 02:00 PM',
             title: 'Web Design',
             description: 'Crafting the interfaces of the future. Portals to new worlds, built with code.',
             icon: 'html',
             mainIcon: 'lan'
         },
         {
-            time: '02:00 PM - 04:00 PM',
+            time: '11:00 AM - 02:00 PM',
             title: 'Snap_sense',
             description: 'Capture the fleeting moments between realities. The lens never lies.',
             icon: 'photo_camera',

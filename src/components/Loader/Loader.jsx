@@ -93,7 +93,7 @@ const Loader = ({ onEnter }) => {
             <div className={`intro ${introHidden ? 'intro--hide' : ''}`}>
                 <h1 className="intro-title">INTELLINA 2K26</h1>
                 <p className="intro-text intro-text--show" style={{ maxWidth: '600px', margin: '0 auto', letterSpacing: '0.5px' }}>
-                    <span style={{ display: 'block', marginBottom: '1em', textTransform: 'uppercase', fontSize: '0.8em', letterSpacing: '2px', color: '#666' }}>-- U.S. DEPARTMENT OF ENERGY --</span>
+                    <span style={{ display: 'block', marginBottom: '1em', textTransform: 'uppercase', fontSize: '0.8em', letterSpacing: '2px', color: '#666' }}>-- AI & DS --</span>
                     The Department of AI & Data Science is cracking the dimensional barrier at C.I.T.
                     <br /><br />
                     <span style={{ color: '#fff', textShadow: '0 0 5px rgba(255,255,255,0.5)' }}>WARNING:</span> The frequencies are unstable.

@@ -26,7 +26,7 @@ const Flagship = () => {
       slug: 'object-odyssey'
     },
     {
-      name: 'E-Sports',
+      name: 'E-SPORTS(FREE FIRE)',
       tagline: 'Battle In Virtual Arenas, Prove Your Gaming Supremacy',
       prize: '₹ 1,000 *',
       image: '/assets/events/images/E-sports.jpeg',
