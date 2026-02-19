@@ -18,7 +18,7 @@ const Technical = () => {
       image: '/assets/events/images/paperpresentation.jpg'
     },
     {
-      name: 'Hackathon',
+      name: 'Web Agent Hackathon',
       slug: 'hackathon',
       tagline: 'Build Smart. Deploy Agents. Automate the Future.',
       prize: '₹ 25,000 *',
@@ -39,7 +39,7 @@ const Technical = () => {
       image: '/assets/events/images/ProjectExpo.jpeg'
     },
     {
-      name: 'Worst UI',
+      name: 'Worst UI Design',
       slug: 'worst-ui',
       tagline: 'Create The Most Hilariously Terrible User Interface',
       prize: '₹ 5,000 *',

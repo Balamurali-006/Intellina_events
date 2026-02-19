@@ -82,7 +82,7 @@ const Navbar = () => {
                             onClick={handleLinkClick}
                             className="block text-center px-4 py-3 bg-black/80 text-white font-black text-sm rounded-lg border-2 border-st-red/50 hover:border-st-red hover:bg-st-red hover:text-black transition-all duration-500"
                         >
-                            <span className="font-mono">&lt;/&gt;</span>
+                            <span className="font-mono">&lt;/DEV&gt;</span>
                         </Link>
                     </li>
                 </ul>
@@ -173,7 +173,7 @@ const Navbar = () => {
 
                     {/* Developer Button */}
                     <Link to="/developers" className="hidden xl:block px-3 py-1.5 bg-black/80 text-white font-black text-xs rounded-lg border border-st-red/40 hover:border-st-red hover:bg-st-red hover:text-black transition-all duration-500 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,0,51,0.6)] relative z-10 overflow-hidden group/dev backdrop-blur-sm">
-                        <span className="relative z-10 font-mono">&lt;/&gt;</span>
+                        <span className="relative z-10 font-mono">&lt;/dev&gt;</span>
                         {/* Developer Btn Glow */}
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover/dev:translate-x-full transition-transform duration-1000"></div>
                         {/* Pulse Effect on Hover */}

@@ -22,11 +22,16 @@ const EventDescription = () => {
   const isHackathon =
     normalize(eventId) === 'hackathon' || normalize(eventDetails?.title) === 'hackathon';
 
+  const isEsports =
+    normalize(eventId) === 'esports' || normalize(eventDetails?.title).includes('esports');
+
   const registerUrl = isGptathon
     ? 'https://unstop.com/o/1QyUbxr?lb=TncsUv60&utm_medium=Share&utm_source=harism8992&utm_campaign=Online_coding_challenge'
     : isHackathon
       ? 'https://unstop.com/o/pbuTYrw?lb=MZOG3iNE&utm_medium=Share&utm_source=dharsb2554&utm_campaign=Online_coding_challenge'
-      : 'https://docs.google.com/forms/d/e/1FAIpQLScUsI6og_xxSWquoO9k74xv3ZbN1xHb5D94Kw8jrLcpdih0Rw/viewform';
+      : isEsports
+        ? 'https://docs.google.com/forms/d/e/1FAIpQLSdiuFjSL8w4ZOvKS-ViCG_fGXyHhWGdtymWQ4kSnZCPa5NXqQ/viewform?usp=dialog'
+        : 'https://docs.google.com/forms/d/e/1FAIpQLScUsI6og_xxSWquoO9k74xv3ZbN1xHb5D94Kw8jrLcpdih0Rw/viewform';
 
   const handleClose = () => {
     navigate(-1);
@@ -108,7 +113,7 @@ const EventDescription = () => {
                 </div>
                 <div className="info-text">
                   <span className="info-label">SCHEDULE</span>
-                  <span className="info-value">{eventDetails.day}- {eventDetails.time}</span>
+                  <span className="info-value">{eventDetails.day}{eventDetails.time && ` - ${eventDetails.time}`}</span>
                 </div>
               </div>
 

@@ -12,7 +12,7 @@ const NonTech = () => {
   // ... events data ...
   const events = [
     {
-      name: 'Big Boss',
+      name: 'Bigg Boss',
       slug: 'bigboss',
       tagline: 'Strategy, Survival & Social Dynamics In The Ultimate Reality Challenge',
       prize: '₹ 1,500 *',

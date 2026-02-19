@@ -79,7 +79,7 @@ const events = {
         "Project Expo is a grand showcase of innovation where participants present working models, prototypes, and research projects that demonstrate real-world impact and engineering excellence.",
       day: "Mar 7",
       time: "9.00 am to 12.00 pm",
-      teamSize: "Team of 3-4",
+      teamSize: "Team of 1-4",
       prizes: "8,000",
       image: "/assets/events/images/ProjectExpo.jpeg",
       poster: "/assets/events/posters/ProjectExpo.png"
@@ -106,10 +106,10 @@ const events = {
 
     "object-odyssey": {
       id: 17,
-      title: "OBJECT ODYSSEY",
+      title: "OBJECT ODESSEY",
       category: "flagship",
       description:
-        "Object Odyssey is a thrilling scavenger hunt that tests observation skills, quick thinking, and the ability to spot hidden objects in complex environments. Participants race to find specific items before time runs out.",
+        "Object Odessey is a thrilling scavenger hunt that tests observation skills, quick thinking, and the ability to spot hidden objects in complex environments. Participants race to find specific items before time runs out.",
       day: "Mar 6",
       time: "3.00 pm to 5.00 pm",
       teamSize: "Team of 2",
@@ -125,7 +125,7 @@ const events = {
       description:
         "Free Fire is an adrenaline-pumping esports event that challenges players to outplay, outthink, and outlast their opponents. With fast-paced action, sharp reflexes, and tactical teamwork, participants must fight their way to be the last squad standing",
       day: "Feb 28 and Mar 1",
-      time: "TBA",
+      time: "",
       teamSize: "Team of 4",
       prizes: "1,000",
       image: "/assets/events/images/E-sports.jpeg",
@@ -156,8 +156,8 @@ const events = {
       description:
         "IPL Auction simulates the excitement of a professional cricket auction, challenging teams to strategically bid and build a balanced squad.",
       day: "Mar 7",
-      time: "9.00 am",
-      teamSize: "Team of 3-4",
+      time: "9.00 am to 2.00 pm",
+      teamSize: "Team of 1-4",
       prizes: "1,500",
       image: "/assets/events/images/IPLAuction.jpeg",
       poster: "/assets/events/posters/IPLAuction.png"
@@ -171,7 +171,7 @@ const events = {
         "Treasure Hunt is an adventurous team challenge where clues are solved sequentially to uncover hidden treasures.",
       day: "Mar 6",
       time: "11.00 am to 3.00 pm",
-      teamSize: "Team of 4-6",
+      teamSize: "Team of 4-5",
       prizes: "2,000",
       image: "/assets/events/images/TreasureHunt.jpeg",
       poster: "/assets/events/posters/TreasureHunt.png"

@@ -14,6 +14,20 @@ import upsideDownBg from '../../assets/timeline/images/timeline/st_upsidedown.jp
 const timelineData = {
     day1: [
         {
+            time: '09:00 AM - 10:00 AM',
+            title: 'Inauguration',
+            description: 'Witness the opening of the event. The journey begins here.',
+            icon: 'celebration',
+            mainIcon: 'event_available'
+        },
+        {
+            time: '10:00 AM - 12:00 PM',
+            title: 'Fandom Frenzy Quiz',
+            description: 'A rapid, buzzer-style quiz covering anime and web series. Test your knowledge under pressure.',
+            icon: 'smart_toy',
+            mainIcon: 'psychology'
+        },
+        {
             time: '10:00 AM - 05:00 PM',
             title: 'Paper presentation',
             description: 'Unveiling the blueprints of the unknown. Present your research on the fringes of reality.',
@@ -22,17 +36,17 @@ const timelineData = {
         },
         {
             time: '10:00 AM - 05:00 PM',
-            title: 'Hackathon',
-            description: 'Code your way through the darkness. 7 hours to build something that defies the laws of nature.',
+            title: 'Web Agent Hackathon',
+            description: 'Code your way through the darkness. Build something that defies the laws of nature.',
             icon: 'terminal',
             mainIcon: 'code'
         },
         {
-            time: '10:30 AM - 01:30 PM',
-            title: 'Fandom Frenzy Quiz',
-            description: 'A rapid, buzzer-style quiz covering anime and web series. Test your knowledge under pressure.',
-            icon: 'smart_toy',
-            mainIcon: 'psychology'
+            time: '10:30 AM - 02:00 PM',
+            title: 'Gptathon',
+            description: 'Harness the power of Large Language Models to solve real-world enigmas.',
+            icon: 'psychology',
+            mainIcon: 'smart_toy'
         },
         {
             time: '10:30 AM - 03:00 PM',
@@ -71,7 +85,7 @@ const timelineData = {
         },
         {
             time: '02:00 PM - 05:00 PM',
-            title: 'Big Boss',
+            title: 'Bigg Boss',
             description: 'The ultimate leadership challenge. Who will emerge as the master of this domain?',
             icon: 'visibility',
             mainIcon: 'eye_tracking'
@@ -85,21 +99,20 @@ const timelineData = {
         },
         {
             time: '03:00 PM - 05:00 PM',
-            title: 'Object Odyssey',
+            title: 'Object Odessey',
             description: 'Navigate through a collection of anomalous objects. Every item tells a story of the other side.',
             icon: 'category',
             mainIcon: 'inventory_2'
-        },
-        {
-            time: 'Feb 28 & Mar 1',
-            title: 'E-sports',
-            description: 'Free Fire is an adrenaline-pumping esports event that challenges players to outplay, outthink, and outlast their opponents.',
-            icon: 'sports_esports',
-            mainIcon: 'stadia_controller',
-            isSpecial: true
         }
     ],
     day2: [
+        {
+            time: '09:00 AM - 02:00 PM',
+            title: 'IPL Auction',
+            description: 'A high-stakes bidding war for the ultimate team. Fortune favors the bold.',
+            icon: 'gavel',
+            mainIcon: 'bid_landscape'
+        },
         {
             time: '09:00 AM - 12:00 PM',
             title: 'Project Expo',
@@ -122,15 +135,8 @@ const timelineData = {
             mainIcon: 'share_reviews'
         },
         {
-            time: '09:00 AM',
-            title: 'IPL Auction',
-            description: 'A high-stakes bidding war for the ultimate team. Fortune favors the bold.',
-            icon: 'gavel',
-            mainIcon: 'bid_landscape'
-        },
-        {
             time: '11:00 AM - 02:00 PM',
-            title: 'Worst Design',
+            title: 'Worst UI Design',
             description: 'Embrace the chaos. Create something so intentionally flawed it becomes a masterpiece.',
             icon: 'design_services',
             mainIcon: 'brush'
@@ -149,6 +155,13 @@ const timelineData = {
             icon: 'photo_camera',
             mainIcon: 'camera',
             isSpecial: true
+        },
+        {
+            time: '02:30 PM - 04:30 PM',
+            title: 'Valediction',
+            description: 'The event closes. Celebrating the champions who navigated the void.',
+            icon: 'military_tech',
+            mainIcon: 'emoji_events'
         }
     ]
 };
@@ -277,8 +290,8 @@ const Timeline = () => {
                                 <button
                                     onClick={() => handleDayChange('day1')}
                                     className={`px-6 sm:px-8 py-2 font-benguiat text-base sm:text-lg tracking-[0.2em] transition-all duration-500 border-b-2 ${activeDay === 'day1'
-                                        ? 'text-primary-light border-primary drop-shadow-[0_0_8px_rgba(255,0,0,0.5)]'
-                                        : 'text-gray-600 border-transparent hover:text-gray-400'
+                                        ? 'text-white border-red-600 drop-shadow-[0_0_15px_rgba(255,0,0,1)]'
+                                        : 'text-gray-400 border-transparent hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]'
                                         }`}
                                 >
                                     DAY 1
@@ -286,8 +299,8 @@ const Timeline = () => {
                                 <button
                                     onClick={() => handleDayChange('day2')}
                                     className={`px-6 sm:px-8 py-2 font-benguiat text-base sm:text-lg tracking-[0.2em] transition-all duration-500 border-b-2 ${activeDay === 'day2'
-                                        ? 'text-blue-400 border-blue-500 drop-shadow-[0_0_8px_rgba(0,100,255,0.5)]'
-                                        : 'text-gray-600 border-transparent hover:text-gray-400'
+                                        ? 'text-white border-blue-500 drop-shadow-[0_0_15px_rgba(0,100,255,1)]'
+                                        : 'text-gray-400 border-transparent hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]'
                                         }`}
                                 >
                                     DAY 2

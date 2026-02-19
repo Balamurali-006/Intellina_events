@@ -763,47 +763,53 @@
 
 .page-events .event-media-container {
     width: 100%;
-    max-width: 420px;
-    max-height: 75vh;
-
+    max-width: 440px;
+    height: 75vh;
+    /* Fixed height for the box creates a stable frame */
     display: flex;
-
-    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
     overflow: hidden;
     position: relative;
-    margin-top: 0;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+    border: 1.5px solid rgba(255, 26, 26, 0.4);
+    background: #050505;
+    box-sizing: border-box;
 }
 
 
 .page-events .event-media {
-    max-width: 100%;
-    max-height: 100%;
-
+    width: 100%;
+    height: 100%;
     object-fit: contain;
+    /* This will force the image to fit entirely within the box */
     display: block;
     margin: auto;
+    border-radius: 0px;
 }
 
 .page-events .event-media-container::after {
     content: '';
     position: absolute;
     inset: 0;
-    box-shadow: inset 0 0 60px rgba(255, 0, 0, 0.25);
     pointer-events: none;
 }
 
 
 .page-events .event-media-container:hover .event-media {
-    transform: scale(1.1);
+    transform: scale(1.0);
+    /* Removed scaling to prevent cutting edge details */
 }
 
 .page-events .media-overlay {
     position: absolute;
-    inset: 0;
-    background: linear-gradient(30deg, rgba(74, 28, 28, 0.2), transparent);
+    inset: 10px;
+    /* Matches new container padding */
+    background: linear-gradient(30deg, rgba(255, 26, 26, 0.05), transparent);
     pointer-events: none;
+    border-radius: 4px;
 }
 
 @media (max-width: 1024px) {
@@ -898,8 +904,9 @@
 
     .event-media-container {
         width: 100%;
-        max-width: 360px;
-        aspect-ratio: 3 / 4;
+        max-width: 380px;
+        padding: 10px;
+        aspect-ratio: auto;
     }
 
     .event-desc-left {
@@ -1240,21 +1247,19 @@
 
 /* Enhanced Poster Container */
 .page-events .event-media-container {
-    border: 2px solid rgba(255, 26, 26, 0.15);
+    border: 1px solid rgba(255, 26, 26, 0.3);
     box-shadow:
         0 20px 60px rgba(0, 0, 0, 0.8),
-        0 0 50px rgba(255, 0, 0, 0.1),
-        inset 0 0 60px rgba(255, 0, 0, 0.03);
+        0 0 50px rgba(255, 0, 0, 0.1);
     transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .page-events .event-media-container:hover {
-    border-color: rgba(255, 26, 26, 0.4);
+    border-color: rgba(255, 26, 26, 1);
     box-shadow:
-        0 30px 80px rgba(0, 0, 0, 0.95),
-        0 0 80px rgba(255, 0, 0, 0.25),
-        inset 0 0 80px rgba(255, 0, 0, 0.08);
-    transform: translateY(-12px) scale(1.02);
+        0 30px 70px rgba(0, 0, 0, 1),
+        0 0 40px rgba(255, 0, 0, 0.25);
+    transform: translateY(-5px);
 }
 
 /* Animated Glow on Poster */

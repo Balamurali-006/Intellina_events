@@ -19,7 +19,7 @@ const Flagship = () => {
       slug: 'rapid-chess'
     },
     {
-      name: 'Object Odyssey',
+      name: 'Object Odessey',
       tagline: 'A thrilling hunt for hidden objects that sharpens your mind.',
       prize: '₹ 1,500 *',
       image: '/assets/events/images/ObjectOdyssey.jpeg',

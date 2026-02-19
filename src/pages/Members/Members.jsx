@@ -50,7 +50,7 @@ export default function Members() {
     const hod = {
         name: "DR.VALLIAPPAN RAMAN",
         role: "HEAD OF THE DEPARTMENT",
-        description: "Visionary leader with over 20 years of experience in AI and academic excellence.",
+        description: "A forward-thinking leader in AI, backed by years of experience and a proven record of academic excellence.",
         photo: "/assets/members/profiles/VALLIAPPANRAMAN.jpg",
         linkedin: "https://www.linkedin.com/in/valliappan-raman-smieee-ceng-uk-intpe-miet-mie-macs-34184b22/",
         email: "valliappan@cit.edu.in"
@@ -68,7 +68,7 @@ export default function Members() {
         {
             name: "MS.R.AKSHAYA",
             role: "STAFF ADVISOR",
-            description: "Expert in machine learning, fostering a culture of continuous learning.",
+            description: "Expert in Data Science, fostering a culture of continuous learning.",
             photo: "/assets/members/profiles/AKSHAYA.jpg",
             email: "akshaya@cit.edu.in"
         }

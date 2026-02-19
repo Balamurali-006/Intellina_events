@@ -35,7 +35,7 @@ const passesData = [
             "Paper Presentation",
             "Web Designing",
             "Treasure Hunt",
-            "Object Odyssey",
+            "Object Odessey",
             "Connections",
             "Snap-Sense",
         ],

@@ -141,7 +141,7 @@ export default function About() {
           </SpotlightCard>
 
           <SpotlightCard spotlightColor="rgba(255, 42, 26, 0.3)">
-            <h3>Last year participants of <span style={{ color: '#4a90e2' }}>5K</span></h3>
+            <h3>Last year participants --  <span style={{ color: '#4a90e2' }}>2K</span></h3>
           </SpotlightCard>
         </div>
 
