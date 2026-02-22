@@ -13,8 +13,8 @@ import NonTech from './pages/Events/NonTech';
 import Timeline from './pages/Timeline/Timeline';
 import Passes from './pages/Passes/Passes';
 import EventDescription from './pages/Events/EventDescription';
-import Workshop from './pages/Workshop/Workshop';
-import WorkshopDetail from './pages/Workshop/WorkshopDetail';
+import Workshop from './pages/workshop/Workshop';
+import WorkshopDetail from './pages/workshop/WorkshopDetail';
 import Loader from './components/Loader/Loader';
 import Transition from './components/Transition/Transition';
 
