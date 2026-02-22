@@ -22,8 +22,8 @@ const Loader = ({ onEnter }) => {
             setViewportShow(true);
             setSkipBtnShow(true);
 
-            // Credits animation - show each credit for 3 seconds
-            const creditsMs = 3000;
+            // Credits animation - show each credit for 1 second
+            const creditsMs = 1000;
             const creditElements = document.querySelectorAll('.credits-group');
 
             creditElements.forEach((credit, i) => {
@@ -45,7 +45,7 @@ const Loader = ({ onEnter }) => {
             }, creditElements.length * creditsMs);
 
             // Scene animations
-            const scenesMs = [creditsMs, creditsMs * 2, creditsMs, creditsMs, creditsMs, creditsMs, creditsMs * 2, 19500];
+            const scenesMs = [creditsMs, creditsMs * 2, creditsMs, creditsMs, creditsMs, creditsMs, creditsMs * 2, 5000];
             const sceneElements = document.querySelectorAll('.title--scene');
             const fullTitle = document.querySelector('.title--full');
 
@@ -69,10 +69,10 @@ const Loader = ({ onEnter }) => {
                     fullTitle.classList.add('title--show');
                 }
 
-                // Complete after full title animation (20s)
+                // Complete after full title animation (5s)
                 setTimeout(() => {
                     onEnter();
-                }, 20000);
+                }, 5000);
             }, offset);
 
         }, 1500);

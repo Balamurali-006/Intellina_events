@@ -251,9 +251,22 @@ const Home = () => {
                             </a>
                         </div>
 
-                        <div className="flex flex-wrap justify-center gap-6 pt-4">
-                            {/* Register Button - Premium Design with Pulse Effect */}
-                            <Link to="/passes" className="group relative flex items-center gap-3 px-12 py-4 bg-gradient-to-r from-white via-gray-100 to-white text-black font-black text-xl rounded-xl overflow-hidden transition-all duration-500 transform hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(255,255,255,0.4)] hover:shadow-[0_0_50px_rgba(255,255,255,0.8)]">
+                        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-start gap-4 lg:gap-6 pt-6 w-full max-w-5xl mx-auto relative z-[50] pointer-events-auto">
+                            {/* Register for Hackathon */}
+                            <a
+                                href="https://unstop.com/o/pbuTYrw?lb=MZOG3iNE&utm_medium=Share&utm_source=dharsb2554&utm_campaign=Online_coding_challenge"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group relative flex items-center justify-center gap-3 px-8 md:px-10 py-4 bg-gradient-to-r from-[#1a1a1a] via-[#2a2a2a] to-[#1a1a1a] border-2 border-green-500/50 text-white font-black text-lg md:text-xl rounded-xl overflow-hidden transition-all duration-500 transform hover:scale-110 active:scale-95 shadow-[0_0_20px_rgba(34,197,94,0.2)] hover:shadow-[0_0_40px_rgba(34,197,94,0.6)] hover:border-green-400 z-10 w-full md:w-auto"
+                            >
+                                {/* Animated Background Shine */}
+                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-green-500/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                                <span className="relative z-10 text-xl md:text-2xl group-hover:animate-bounce">💻</span>
+                                <span className="relative z-10 tracking-widest textShadow uppercase whitespace-nowrap">HACKATHON</span>
+                            </a>
+
+                            {/* Main Register Button - Premium Design with Pulse Effect */}
+                            <Link to="/passes" className="group relative flex items-center justify-center gap-3 px-10 md:px-12 py-4 bg-gradient-to-r from-white via-gray-100 to-white text-black font-black text-xl md:text-2xl rounded-xl overflow-hidden transition-all duration-500 transform hover:scale-110 active:scale-95 shadow-[0_0_30px_rgba(255,255,255,0.4)] hover:shadow-[0_0_50px_rgba(255,255,255,0.8)] flex-shrink-0 w-full md:w-auto z-20">
                                 {/* Animated Background Shine */}
                                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
 
@@ -263,8 +276,21 @@ const Home = () => {
                                 <svg className="relative z-10 w-7 h-7 fill-current group-hover:animate-pulse" viewBox="0 0 24 24">
                                     <path d="M8 5v14l11-7z" />
                                 </svg>
-                                <span className="relative z-10 tracking-wider">REGISTER</span>
+                                <span className="relative z-10 tracking-wider whitespace-nowrap">REGISTER</span>
                             </Link>
+
+                            {/* Register for GPTathon */}
+                            <a
+                                href="https://unstop.com/o/1QyUbxr?lb=TncsUv60&utm_medium=Share&utm_source=harism8992&utm_campaign=Online_coding_challenge"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group relative flex items-center justify-center gap-3 px-8 md:px-10 py-4 bg-gradient-to-r from-[#1a1a1a] via-[#2a2a2a] to-[#1a1a1a] border-2 border-green-500/50 text-white font-black text-lg md:text-xl rounded-xl overflow-hidden transition-all duration-500 transform hover:scale-110 active:scale-95 shadow-[0_0_20px_rgba(34,197,94,0.2)] hover:shadow-[0_0_40px_rgba(34,197,94,0.6)] hover:border-green-400 z-10 w-full md:w-auto"
+                            >
+                                {/* Animated Background Shine */}
+                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-green-500/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                                <span className="relative z-10 text-xl md:text-2xl group-hover:animate-bounce">🤖</span>
+                                <span className="relative z-10 tracking-widest textShadow uppercase whitespace-nowrap">GPT-ATHON</span>
+                            </a>
                         </div>
                     </div>
 

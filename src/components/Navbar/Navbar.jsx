@@ -32,6 +32,7 @@ const Navbar = () => {
         { to: '/', label: 'HOME' },
         { to: '/about', label: 'ABOUT' },
         { to: '/events', label: 'EVENTS' },
+        { to: '/workshop', label: 'WORKSHOP' },
         { to: '/timeline', label: 'TIMELINE' },
         { to: '/passes', label: 'PASSES' },
         { to: '/members', label: 'MEMBERS' },
@@ -88,7 +89,7 @@ const Navbar = () => {
                 </ul>
             </div>
 
-            <nav className="fixed top-6 sm:top-8 md:top-10 left-1/2 transform -translate-x-1/2 z-50 w-[95%] sm:w-[90%] md:w-[85%] lg:w-[75%] xl:w-[70%] max-w-7xl">
+            <nav className="fixed top-6 sm:top-8 md:top-10 inset-x-0 mx-auto z-50 w-[95%] sm:w-[90%] md:w-[85%] lg:w-[75%] xl:w-[70%] max-w-7xl">
                 <div id="innovative-navbar" className="innovative-navbar glass-premium glass-premium--red rounded-full px-6 py-3 sm:py-4 md:px-8 md:py-5 flex justify-between items-center group/nav overflow-hidden relative" style={{ borderRadius: '9999px' }}>
                     {/* Holographic Grid Pattern */}
                     <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'linear-gradient(rgba(255,0,51,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,0,51,0.3) 1px, transparent 1px)', backgroundSize: '15px 15px', animation: 'nav-grid-move 15s linear infinite' }}></div>

@@ -13,6 +13,8 @@ import NonTech from './pages/Events/NonTech';
 import Timeline from './pages/Timeline/Timeline';
 import Passes from './pages/Passes/Passes';
 import EventDescription from './pages/Events/EventDescription';
+import Workshop from './pages/Workshop/Workshop';
+import WorkshopDetail from './pages/Workshop/WorkshopDetail';
 import Loader from './components/Loader/Loader';
 import Transition from './components/Transition/Transition';
 
@@ -53,6 +55,10 @@ function App() {
                     <Route path="timeline" element={<Timeline />} />
                     <Route path="passes" element={<Passes />} />
                     <Route path="developers" element={<Developers />} />
+                    <Route path="workshop">
+                        <Route index element={<Workshop />} />
+                        <Route path=":id" element={<WorkshopDetail />} />
+                    </Route>
                 </Route>
             </Routes>
         </Router>
