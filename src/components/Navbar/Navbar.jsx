@@ -149,7 +149,7 @@ const Navbar = () => {
                     <ul className="hidden xl:flex items-center space-x-2 relative z-10">
                         {navLinks.map((link) => (
                             <li key={link.to}>
-                                <Link to={link.to} className="nav-link relative text-[10px] md:text-sm font-black tracking-[0.1em] text-gray-400 hover:text-white transition-all duration-500 py-1.5 md:py-2 px-3 md:px-4 rounded-lg group/link overflow-hidden">
+                                <Link to={link.to} className="nav-link relative text-[9px] md:text-xs font-black tracking-[0.1em] text-gray-400 hover:text-white transition-all duration-500 py-1.5 md:py-2 px-3 md:px-4 rounded-lg group/link overflow-hidden">
                                     <span className="relative z-10">{link.label}</span>
                                     <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-gradient-to-r from-transparent via-st-red to-transparent group-hover/link:w-full transition-all duration-700 ease-in-out" style={{ boxShadow: '0 0 10px rgba(255,0,51,0.6)' }}></span>
                                 </Link>
