@@ -6,10 +6,11 @@ import './Workshop.css';
 const speaker1Img = "/assets/workshop/speaker1.jpeg";
 const speaker2Img = "/assets/workshop/speaker2.jpeg";
 const speakerKalaivaniImg = "/assets/workshop/kalaivani_mam.jpeg";
+const speakerGobinathImg = "/assets/workshop/gobinath.png";
 
 const WORKSHOPS_DATA = {
     'agentic-ai': {
-        title: "Building Agentic AI Apps with Google’s ADK: From \"Can Machines Think?\" to \"Machines That Act\"",
+        title: "AI Apps with Google’s ADK: From \"Can Machines Think?\" to \"Machines That Act\"",
         mom: [
             "The Cognitive Cycle: Understanding the ReAct pattern (Reason + Act) and how agents break down vague instructions (e.g., \"Plan a trip to Palakkad\") into executable steps.",
             "Hello, ADK: Setting up your first agent in under 100 lines of code.",
@@ -35,14 +36,16 @@ const WORKSHOPS_DATA = {
         ]
     },
     'generative-ai': {
-        title: "Generative AI Unleashed: Transforming Ideas into Intelligent Creations",
+        title: <>Reinforcement Learning <br /><span style={{ fontSize: '0.6em', color: 'rgba(255,255,255,0.85)', fontWeight: '500', marginTop: '12px', display: 'inline-block' }}>From Games to Self-Driving Cars</span></>,
         mom: [
-            "Introduction: Exploring the power of Generative AI through live demonstrations.",
-            "Real-World Examples: How AI is transforming various industries with tangible impacts.",
-            "Transforming Ideas: Instantly turning thoughts into high-quality text, images, and creative assets.",
-            "Coding & Development: Rapidly generating code and logic using advanced GenAI models.",
-            "Presentation Mastery: Creating intelligent presentations and multimedia content on the fly.",
-            "Hands-on Session: Interactive activities to experience the creative potential of AI tools."
+            "Introduction: Why Reinforcement Learning?",
+            "Foundations of Reinforcement Learning",
+            "From Games to Breakthroughs",
+            "Deep Reinforcement Learning",
+            "RL in Autonomous Vehicles",
+            "Beyond Driving: Real-World Applications",
+            "Challenges in Reinforcement Learning",
+            "Future of Reinforcement Learning"
         ],
         speakers: [
             {
@@ -50,6 +53,24 @@ const WORKSHOPS_DATA = {
                 role: "Assistant Professor",
                 company: "Department of AI&DS, Coimbatore Institute of Technology",
                 image: speakerKalaivaniImg
+            }
+        ]
+    },
+    'agentic-ai-systems': {
+        title: "Agentic AI Systems: Planning, Memory & Tool Integration",
+        mom: [
+            "Introduction to Agentic AI Systems",
+            "Planning complex workflows with AI agents",
+            "Understanding persistent Memory in AI",
+            "Integrating tools for enhanced agent capabilities",
+            "Real-World examples and use cases"
+        ],
+        speakers: [
+            {
+                name: "Gobinath Arumugam",
+                role: "CTO & Artificial Intelligence Architect",
+                company: "XPLORE INTELLECTS PRIVATE LIMITED",
+                image: speakerGobinathImg
             }
         ]
     }
@@ -78,7 +99,7 @@ const WorkshopDetail = () => {
                 <h1 className="workshop-title" style={{ marginTop: '40px', fontSize: '2.5rem' }}>{workshop.title}</h1>
 
                 <div className="mom-section">
-                    <h2 className="mom-title">Minutes of Meeting</h2>
+                    <h2 className="mom-title">Workshop Highlights</h2>
                     <div className="mom-content">
                         <ul>
                             {workshop.mom.map((item, index) => (

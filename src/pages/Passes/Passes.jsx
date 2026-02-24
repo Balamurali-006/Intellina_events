@@ -25,7 +25,7 @@ const passesData = [
         emoji: "🔥",
         delay: 0.1,
         popular: true,
-        hasWorkshop: true,
+        hasWorkshop: false,
     },
     {
         name: "STANDARD PASS",
@@ -44,7 +44,7 @@ const passesData = [
         emoji: "⚡",
         delay: 0.2,
         popular: false,
-        hasWorkshop: true,
+        hasWorkshop: false,
     },
 ];
 
