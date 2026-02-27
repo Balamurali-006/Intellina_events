@@ -74,8 +74,6 @@ const PassCard = ({ name, price, tagline, events, dotColor, accentColor, emoji, 
             {name}
         </div>
 
-        {/* Price label */}
-        <span className="pack-price-label">EARLY BIRD PRICE</span>
 
         {/* Price */}
         <p className="pack-price">₹{price}</p>
@@ -152,19 +150,7 @@ export default function Passes() {
                             CHOOSE YOUR BATTLE PASS
                         </motion.h1>
 
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 0.4 }}
-                            className="page-subtitle text-center max-w-2xl mx-auto flex justify-center"
-                            style={{ marginBottom: '60px' }}
-                        >
-                            <div className="inline-block px-6 py-2 rounded-full border border-red-500/30 bg-red-950/20 backdrop-blur-sm">
-                                <p className="text-red-400 font-mono text-sm md:text-base tracking-widest uppercase animate-pulse mb-0">
-                                    ⚠ Early Bird Registration - Active only for Few days — Expiring Soon
-                                </p>
-                            </div>
-                        </motion.div>
+
 
                         {/* 2x2 Grid */}
                         <div className="passes-grid" style={{
