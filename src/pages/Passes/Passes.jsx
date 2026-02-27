@@ -8,7 +8,7 @@ const REGISTRATION_URL = "https://docs.google.com/forms/d/e/1FAIpQLScUsI6og_xxSW
 const passesData = [
     {
         name: "ELITE PASS",
-        price: 350,
+        price: 400,
         tagline: "All-access pass for flagship events",
         events: [
             "RRR coding",
@@ -29,7 +29,7 @@ const passesData = [
     },
     {
         name: "STANDARD PASS",
-        price: 250,
+        price: 300,
         tagline: "Core events and workshops",
         events: [
             "Paper Presentation",
@@ -415,7 +415,7 @@ export default function Passes() {
                                 textTransform: 'uppercase',
                                 letterSpacing: '0.6px'
                             }}>
-                                EVENTS CAN BE REGISTERED INDIVIDUALLY : Rs.80/ Person for an Event
+                                EVENTS CAN BE REGISTERED INDIVIDUALLY : Rs.120/ Person for an Event
                             </div>
 
                             {/* Individual Event Registration Button */}
