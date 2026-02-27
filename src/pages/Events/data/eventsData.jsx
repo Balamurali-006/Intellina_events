@@ -17,7 +17,7 @@ const events = {
 
     hackathon: {
       id: 2,
-      title: "HACKATHON",
+      title: "WEB AGENT HACKATHON",
       category: "technical",
       description:
         "Web Agent Hackathon is an intense innovation sprint where teams collaborate to design, develop, and deploy intelligent web-based agents within a limited timeframe. Participants transform ideas into functional AI-driven prototypes while showcasing creativity, problem-solving skills, and technical expertise.",
@@ -80,7 +80,7 @@ const events = {
       day: "Mar 7",
       time: "9.00 am to 12.00 pm",
       teamSize: "Team of 1-4",
-      prizes: "8,000",
+      prizes: "5,000",
       image: "/assets/events/images/ProjectExpo.jpeg",
       poster: "/assets/events/posters/ProjectExpo.png"
     }
@@ -130,6 +130,34 @@ const events = {
       prizes: "1,000",
       image: "/assets/events/images/E-sports.jpeg",
       poster: "/assets/events/posters/E-Sports.png"
+    },
+
+    gptathon: {
+      id: 21,
+      title: "GPT-ATHON",
+      category: "flagship",
+      description:
+        "GPTathon is an innovation challenge where participants leverage AI and Large Language Models to solve real-world problems. Participants will build prototypes using Generative AI tools.",
+      day: "Mar 6",
+      time: "10.30 am to 2.00 pm",
+      teamSize: "Team of 2-3",
+      prizes: "8,000",
+      image: "/assets/events/images/GPTathon.jpeg",
+      poster: "/assets/events/posters/GPTathon.png"
+    },
+
+    "fandom-frenzy-quiz": {
+      id: 20,
+      title: "FANDOM FRENZY QUIZ",
+      category: "flagship",
+      description:
+        "Fandom Frenzy Quiz is a fast-paced trivia event testing participants' knowledge across anime and web series. Teams compete in rounds of rapid-fire questions and buzzer challenges.",
+      day: "Mar 6",
+      time: "10.00 am to 12.00 pm",
+      teamSize: "Team of 2",
+      prizes: "1,500",
+      image: "/assets/events/images/FandomFrenzyNew.jpg",
+      poster: "/assets/events/posters/Quiz.jpeg"
     }
   },
 
@@ -201,7 +229,7 @@ const events = {
       time: "3.00 pm to 5.00 pm",
       teamSize: "Team of 3-5",
       prizes: "1,500",
-      image: "/assets/events/images/Murder Mystery.jpeg",
+      image: '/assets/events/images/MurderMysteryNew.jpeg',
       poster: "/assets/events/posters/MurderMystery.png"
     },
 
@@ -210,14 +238,15 @@ const events = {
       title: "SNAP SENSE",
       category: "non-tech",
       description:
-        "Snap Sense challenges participants to capture the perfect moment through photography based on given themes. It tests creativity, timing, and the ability to tell stories through visual composition.",
+        "Snap Sense is a creative photography challenge where participants capture images and provide compelling explanations. The participant with the best picture and most creative explanation wins. It's all about storytelling through visuals and words.",
       day: "Mar 7",
       time: "11.00 am to 2.00 pm",
-      teamSize: "Solo",
+      teamSize: "Individual",
       prizes: "1,500",
       image: "/assets/events/images/SnapSense.jpeg",
       poster: "/assets/events/posters/SNAPSENSE.png"
-    }
+    },
+
   }
 };
 

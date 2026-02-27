@@ -28,14 +28,14 @@ const CategoryCard = ({ title, subtitle, route, character, audioSrc, subtitleTex
 
     setIsTransmitting(true);
 
-    // Navigate at exactly 7 seconds after clicking
+    // Navigate at 2.5 seconds after clicking (enough for the walkie-talkie effect)
     setTimeout(() => {
       if (onReadyToNavigate) {
         onReadyToNavigate(route);
       } else {
         navigate(route);
       }
-    }, 7000);
+    }, 2500);
   };
 
   const handleTransmissionComplete = () => {

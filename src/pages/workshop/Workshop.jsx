@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import './Workshop.css';
 
 const Workshop = () => {
@@ -11,21 +11,30 @@ const Workshop = () => {
 
     const workshops = [
         {
-            id: 'agentic-ai',
-            title: 'AI Apps with Google’s ADK',
-            subtitle: 'From "Can Machines Think?" to "Machines That Act"',
+            id: 'agentic-ai-systems',
+            title: 'Agentic AI Systems',
+            subtitle: 'Planning, Memory & Tool Integration with Gobinath Arumugam',
+            date: 'March 6',
+            time: '11:00 AM – 1:00 PM',
+            venue: 'IT – 212',
             active: true
         },
         {
             id: 'generative-ai',
             title: 'Reinforcement Learning',
             subtitle: <>From Games to Self-Driving Cars<br />with Dr. Kalaivani K</>,
+            date: 'March 6',
+            time: '2:00 PM – 3:00 PM',
+            venue: 'IT – 212',
             active: true
         },
         {
-            id: 'agentic-ai-systems',
-            title: 'Agentic AI Systems',
-            subtitle: 'Planning, Memory & Tool Integration with Gobinath Arumugam',
+            id: 'agentic-ai',
+            title: 'AI Apps with Google\'s ADK',
+            subtitle: 'From "Can Machines Think?" to "Machines That Act"',
+            date: 'March 7',
+            time: '10:00 AM – 1:00 PM',
+            venue: 'IT – 211/213',
             active: true
         }
     ];
@@ -38,6 +47,10 @@ const Workshop = () => {
 
     return (
         <div className="workshop-container">
+            <Link to="/" className="workshop-back-btn">
+                <span className="material-symbols-outlined">arrow_back</span>
+                Back to Home
+            </Link>
             <h1 className="workshop-title">Workshops</h1>
             <div className="workshop-grid">
                 {workshops.map((workshop) => (
@@ -48,6 +61,20 @@ const Workshop = () => {
                     >
                         <h2 className="workshop-card-title">{workshop.title}</h2>
                         <p className="workshop-card-subtitle">{workshop.subtitle}</p>
+                        <div className="workshop-card-meta">
+                            {workshop.date && (
+                                <span className="workshop-meta-item">
+                                    <span className="material-symbols-outlined" style={{ fontSize: '1rem', verticalAlign: 'middle', marginRight: '4px' }}>calendar_month</span>
+                                    {workshop.date}{workshop.time && <>&nbsp;|&nbsp;{workshop.time}</>}
+                                </span>
+                            )}
+                            {workshop.venue && (
+                                <span className="workshop-meta-item">
+                                    <span className="material-symbols-outlined" style={{ fontSize: '1rem', verticalAlign: 'middle', marginRight: '4px' }}>location_on</span>
+                                    {workshop.venue}
+                                </span>
+                            )}
+                        </div>
                         {workshop.active && (
                             <button className="explore-button">EXPLORE SESSION</button>
                         )}

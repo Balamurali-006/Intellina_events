@@ -80,7 +80,7 @@ const events = {
       day: "Mar 7",
       time: "9.00 am to 12.00 pm",
       teamSize: "Team of 1-4",
-      prizes: "8,000",
+      prizes: "5,000",
       image: "/assets/events/images/ProjectExpo.jpeg",
       poster: "/assets/events/posters/ProjectExpo.png"
     }

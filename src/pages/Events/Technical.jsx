@@ -35,7 +35,7 @@ const Technical = () => {
       name: 'Project Expo',
       slug: 'project-expo',
       tagline: 'Showcase Your Innovation & Engineering Excellence',
-      prize: '₹ 8,000 *',
+      prize: '₹ 5,000 *',
       image: '/assets/events/images/ProjectExpo.jpeg'
     },
     {

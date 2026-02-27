@@ -42,7 +42,7 @@ const Flagship = () => {
     {
       name: 'Fandom Frenzy Quiz',
       tagline: 'Test your knowledge in the ultimate fandom battle.',
-      prize: '₹ 1,000*',
+      prize: '₹ 1,500*',
       image: '/assets/events/images/FandomFrenzyNew.jpg',
       slug: 'fandom-frenzy-quiz'
     }
