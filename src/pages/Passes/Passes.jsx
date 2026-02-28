@@ -332,11 +332,28 @@ export default function Passes() {
                                     <p style={{
                                         color: 'rgba(200, 255, 200, 0.7)',
                                         fontSize: '0.95rem',
-                                        marginBottom: '24px',
+                                        marginBottom: '16px',
                                         lineHeight: '1.6',
                                     }}>
                                         Web Agent Hackathon - Build Intelligent Agents That Shape Tomorrow
                                     </p>
+                                    <div style={{
+                                        marginBottom: '20px',
+                                        padding: '10px 16px',
+                                        background: 'linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(234, 179, 8, 0.05))',
+                                        border: '1.5px solid rgba(234, 179, 8, 0.6)',
+                                        borderRadius: '8px',
+                                        textAlign: 'center',
+                                        fontSize: '0.8rem',
+                                        fontWeight: 700,
+                                        color: '#eab308',
+                                        textTransform: 'uppercase',
+                                        letterSpacing: '1.5px',
+                                        boxShadow: '0 0 15px rgba(234, 179, 8, 0.2)',
+                                        animation: 'pulse 2s ease-in-out infinite',
+                                    }}>
+                                        🔥 Registration Extended till March 3, 2026
+                                    </div>
                                     <button
                                         onClick={() => window.open('https://unstop.com/o/pbuTYrw?lb=MZOG3iNE&utm_medium=Share&utm_source=dharsb2554&utm_campaign=Online_coding_challenge', '_blank')}
                                         style={{

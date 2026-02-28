@@ -251,22 +251,9 @@ const Home = () => {
                             </a>
                         </div>
 
-                        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-start gap-4 lg:gap-6 pt-6 w-full max-w-5xl mx-auto relative z-[50] pointer-events-auto">
-                            {/* Register for Hackathon */}
-                            <a
-                                href="https://unstop.com/o/pbuTYrw?lb=MZOG3iNE&utm_medium=Share&utm_source=dharsb2554&utm_campaign=Online_coding_challenge"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="group relative flex items-center justify-center gap-4 px-12 md:px-14 py-6 bg-gradient-to-r from-[#1a1a1a] via-[#2a2a2a] to-[#1a1a1a] border-2 border-green-500/50 text-white font-black text-[0.65rem] md:text-xs rounded-xl overflow-hidden transition-all duration-500 transform hover:scale-110 active:scale-95 shadow-[0_0_20px_rgba(34,197,94,0.2)] hover:shadow-[0_0_40px_rgba(34,197,94,0.6)] hover:border-green-400 z-10 w-full md:w-auto"
-                            >
-                                {/* Animated Background Shine */}
-                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-green-500/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-                                <span className="relative z-10 text-sm md:text-base group-hover:animate-bounce">💻</span>
-                                <span className="relative z-10 tracking-[0.15em] textShadow uppercase whitespace-nowrap">HACKATHON</span>
-                            </a>
-
+                        <div className="flex flex-col items-center justify-center gap-6 pt-6 w-full max-w-5xl mx-auto relative z-[50] pointer-events-auto">
                             {/* Main Register Button - Premium Design with Pulse Effect */}
-                            <Link to="/passes" className="group relative flex items-center justify-center gap-3 px-10 md:px-12 py-4 bg-gradient-to-r from-white via-gray-100 to-white text-black font-black text-xl md:text-2xl rounded-xl overflow-hidden transition-all duration-500 transform hover:scale-110 active:scale-95 shadow-[0_0_30px_rgba(255,255,255,0.4)] hover:shadow-[0_0_50px_rgba(255,255,255,0.8)] flex-shrink-0 w-full md:w-auto z-20">
+                            <Link to="/passes" className="group relative flex items-center justify-center gap-3 px-10 md:px-16 py-5 bg-gradient-to-r from-white via-gray-100 to-white text-black font-black text-xl md:text-2xl rounded-xl overflow-hidden transition-all duration-500 transform hover:scale-110 active:scale-95 shadow-[0_0_30px_rgba(255,255,255,0.4)] hover:shadow-[0_0_50px_rgba(255,255,255,0.8)] flex-shrink-0 w-full md:w-auto z-20">
                                 {/* Animated Background Shine */}
                                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
 
@@ -276,21 +263,40 @@ const Home = () => {
                                 <svg className="relative z-10 w-7 h-7 fill-current group-hover:animate-pulse" viewBox="0 0 24 24">
                                     <path d="M8 5v14l11-7z" />
                                 </svg>
-                                <span className="relative z-10 tracking-wider whitespace-nowrap">REGISTER</span>
+                                <span className="relative z-10 tracking-wider whitespace-nowrap">GET EVENT PASSES</span>
                             </Link>
 
-                            {/* Register for GPTathon */}
-                            <a
-                                href="https://unstop.com/o/1QyUbxr?lb=TncsUv60&utm_medium=Share&utm_source=harism8992&utm_campaign=Online_coding_challenge"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="group relative flex items-center justify-center gap-4 px-12 md:px-14 py-6 bg-gradient-to-r from-[#1a1a1a] via-[#2a2a2a] to-[#1a1a1a] border-2 border-green-500/50 text-white font-black text-[0.65rem] md:text-xs rounded-xl overflow-hidden transition-all duration-500 transform hover:scale-110 active:scale-95 shadow-[0_0_20px_rgba(34,197,94,0.2)] hover:shadow-[0_0_40px_rgba(34,197,94,0.6)] hover:border-green-400 z-10 w-full md:w-auto"
-                            >
-                                {/* Animated Background Shine */}
-                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-green-500/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-                                <span className="relative z-10 text-sm md:text-base group-hover:animate-bounce">🤖</span>
-                                <span className="relative z-10 tracking-[0.15em] textShadow uppercase whitespace-nowrap">GPT-ATHON</span>
-                            </a>
+                            {/* Special Events Sub-Buttons Container */}
+                            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 w-full mt-2">
+                                {/* Register for Hackathon */}
+                                <a
+                                    href="https://unstop.com/o/pbuTYrw?lb=MZOG3iNE&utm_medium=Share&utm_source=dharsb2554&utm_campaign=Online_coding_challenge"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="group relative flex items-center justify-center gap-4 px-10 md:px-12 py-5 bg-gradient-to-r from-[#166534] via-[#15803d] to-[#166534] border-2 border-green-400 text-white font-black text-xs md:text-sm rounded-xl overflow-hidden transition-all duration-500 transform hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:shadow-[0_0_40px_rgba(34,197,94,0.8)] z-10 w-full sm:w-auto"
+                                >
+                                    {/* Animated Background Shine */}
+                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-green-300/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                                    <span className="relative z-10 text-xl group-hover:animate-bounce">💻</span>
+                                    <span className="relative z-10 flex flex-col items-start gap-1">
+                                        <span className="tracking-[0.15em] uppercase whitespace-nowrap drop-shadow-[0_0_8px_rgba(255,255,255,0.6)]">HACKATHON</span>
+                                        <span className="text-[0.6rem] md:text-[0.65rem] tracking-[0.05em] text-yellow-300 font-bold whitespace-nowrap animate-pulse">🔥 Extended till Mar 3</span>
+                                    </span>
+                                </a>
+
+                                {/* Register for GPTathon */}
+                                <a
+                                    href="https://unstop.com/o/1QyUbxr?lb=TncsUv60&utm_medium=Share&utm_source=harism8992&utm_campaign=Online_coding_challenge"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="group relative flex items-center justify-center gap-4 px-10 md:px-12 py-5 bg-gradient-to-r from-[#0f172a] via-[#1e293b] to-[#0f172a] border-2 border-blue-500/50 text-white font-black text-xs md:text-sm rounded-xl overflow-hidden transition-all duration-500 transform hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_40px_rgba(59,130,246,0.6)] hover:border-blue-400 z-10 w-full sm:w-auto"
+                                >
+                                    {/* Animated Background Shine */}
+                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-400/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                                    <span className="relative z-10 text-xl group-hover:animate-bounce">🤖</span>
+                                    <span className="relative z-10 tracking-[0.15em] uppercase whitespace-nowrap drop-shadow-[0_0_8px_rgba(255,255,255,0.6)]">GPT-ATHON</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
